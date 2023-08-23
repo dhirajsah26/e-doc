@@ -1,0 +1,219 @@
+.thin-row {
+    margin: 0;
+}
+
+.thin-row > div[class^='col-'] {
+    padding: 0
+}
+
+.info-box {
+    padding: 20px 23px;
+    font-size: 15px
+}
+
+.info-box-icon {
+    line-height: normal;
+    background: none;
+    padding: 0 8px
+}
+
+.info-box-number {
+    font-size: 34px;
+    margin-top: 10px;
+    padding: 0;
+    border: none;
+    font-weight: bold;
+}
+
+.info-box-number .material-icons {
+    font-size: 34px;
+    color: #aaa
+}
+
+.info-summary i {
+    vertical-align: middle;
+    line-height: 16px
+}
+
+.info-box-text {
+    text-transform: none;
+    margin-top: 4px
+}
+
+.box {
+    border-top: none;
+    border-radius: 0;
+    box-shadow: none
+}
+
+.box-header .box-title {
+    font-size: 14px
+}
+
+.navbar h1 {
+    font-family: 'Rubik', sans-serif;
+    color: #ed1c24;
+    margin: 0;
+    font-size: 22px;
+    line-height: 50px;
+    margin-left: 20px
+}
+
+.mb-1 {
+    margin-bottom: 0.5em
+}
+
+.header-college-logo {
+    display: inline-block;
+    margin-right: 15px
+}
+
+.school-info-panels {
+    padding-left: 3px;
+    padding-bottom: 3px
+}
+
+.school-info-panels .col-lg-3 {
+    padding: 10px !important;
+    border: 1px solid #eee;
+    margin-right: -1px;
+    margin-top: -1px;
+}
+
+.box-college-outer {
+    background: #fff;
+    margin-bottom: 25px
+}
+
+.box-college {
+    padding: 20px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box-college h4 {
+    font-size: 17px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.box-buttons {
+    padding: 15px 0
+}
+
+.box-buttons .btn {
+    border-radius: 20px;
+    box-shadow: 0 2px 5px #0000001f;
+    margin: 0 3px;
+    padding: 6px 15px
+}
+
+.college-logo {
+    margin: 0 auto 35px;
+    height: 100px
+}
+
+.college-log img {
+    max-width: 100%
+}
+
+.title-college-list {
+    font-size: 18px;
+    margin-top: 10px
+}
+
+.title-college-list .material-icons {
+    font-size: 22px
+}
+
+.college-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2874f0;
+    color: #fff;
+    padding: 10px;
+    transition: opacity ease-in-out .3s;
+    opacity: 0;
+}
+
+.college-overlay li {
+    margin-bottom: 10px
+}
+
+.college-overlay a {
+    color: #fff
+}
+
+/*.in_chart_select_container{position: relative;}
+.in_chart_select{position: absolute; top: 12px; left: 12px; z-index: 10}*/
+.navbar-nav > li > a {
+    color: #333
+}
+
+header .nav .dropdown-menu {
+    min-width: 150px
+}
+
+header .nav .dropdown-menu i {
+    margin-right: 10px
+}
+
+.filter-data-summary {
+    line-height: 32px;
+    margin: 0;
+}
+
+.filter-data-summary strong {
+    font-size: 18px;
+}
+
+.box-footer {
+    margin: -1px;
+}
+
+.highcharts-menu hr {
+    margin: 7px 0;
+}
+
+
+@media (max-width: 992px) {
+    .college-search-box {
+        margin-bottom: 15px
+    }
+
+    .title-college-list i {
+        display: none;
+    }
+
+    .welcome-text {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .school-info-panels {
+        padding: 0
+    }
+
+    .school-info-panels .col-lg-3 {
+        margin: 0;
+    }
+
+    .box-footer select {
+        margin: 0 auto;
+    }
+
+    .filter-data-summary {
+        text-align: center !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .box-college-outer:hover .college-overlay {
+        opacity: 1
+    }
+}

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="e-doc:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>e-doc</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="e-doc-1.0.1.war">
+      <element id="artifact" artifact-name="e-doc:war exploded" />
+    </root>
+  </artifact>
+</component>

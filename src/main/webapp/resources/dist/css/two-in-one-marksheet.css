@@ -1,0 +1,126 @@
+@page {
+    size: A4 landscape;
+}
+
+.table {
+    margin-bottom: 5px;
+}
+
+.marksheet {
+    font-size: 10px;
+}
+
+.marksheet-wrapper {
+    padding: 6.35mm;
+    height: 209.5mm;
+    overflow: hidden;
+}
+
+.mark_sheet_label {
+    margin-top: 10px;
+}
+
+.school_info h1 {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.college_logo img {
+    max-height: unset;
+}
+
+.ECA-wrapper {
+    padding: 0 5px;
+}
+
+.student_info {
+    padding: 0 12px;
+    line-height: 17px;
+}
+
+.table-bordered > thead > tr > th {
+    padding: 1px 5px;
+    font-size: 10px;
+}
+
+.table-bordered > tbody > tr > td, .total_display strong {
+    padding: 0px 1px;
+    font-size: 10px;
+}
+
+.marks_table > table:last-child td {
+    padding: 1px 3px;
+}
+
+table, p {
+    margin-bottom: 5px;
+}
+
+.footer_info {
+    padding: 0 12px 0px;
+}
+
+.signature-block {
+    margin-top: 0;
+    padding-top: 44px;
+}
+
+.no-gutter {
+    margin: 0;
+}
+
+.no-gutter > div[class^='col-'] {
+    padding: 0
+}
+
+.marks_table > table:first-child {
+    height: 266px;
+}
+
+.marks_table > table:not(.ECA-table) td {
+    line-height: 10px;
+}
+
+.marksheet-outer-wrapper {
+    width: 29.7cm;
+    max-width: 100%
+}
+
+.college_address {
+    line-height: 12px;
+}
+
+.watermark-logo {
+    position: absolute;
+    top: calc(50% - 150px);
+    text-align: center;
+    width: 100%;
+    opacity: 0.2;
+    z-index: 0
+}
+
+.signature_rep {
+    width: 86px;
+    margin: 0 auto;
+}
+
+.signature {
+    left: calc(50% - 35px);
+}
+
+.school_info_heading {
+    max-width: 340px;
+    height: 50px
+}
+
+.mark_sheet_label {
+    font-size: 14px;
+}
+
+@-moz-document url-prefix() {
+    .signature-block {
+        margin-bottom: 2px
+    }
+}
+
+/* .marksheetTwoInOne>.row>div[class^="col-"]:first-child{border-right: 1px dashed #000;} */

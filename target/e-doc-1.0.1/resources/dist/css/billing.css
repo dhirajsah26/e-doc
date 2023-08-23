@@ -1,0 +1,351 @@
+.bill thead th {
+    text-align: left
+}
+
+.bill {
+    min-height: 21cm /* ; width: 29.7cm */;
+    color: #000;
+    font-size: 10px;
+    position: relative
+}
+
+.bill-wrapper {
+    background: #fff;
+    position: relative
+}
+
+.bill-body > p.text-right {
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+}
+
+.bill p {
+    margin-bottom: 0
+}
+
+.bill-wrapper .row {
+    margin: 0 -5px;
+}
+
+.bill-wrapper .row > div[class^='col-'] {
+    padding: 0 5px;
+}
+
+.bill-content {
+    padding: 3px 13px;
+    position: relative;
+    z-index: 10;
+    border: 1px solid #e0e0e0;
+}
+
+.bill h1 {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 0 3px;
+    line-height: 13px;
+}
+
+.small_info {
+    line-height: 12px;
+    font-size: 10px;
+}
+
+.college_logo img {
+    max-height: 70px;
+}
+
+.small_info_right span {
+    width: 42px;
+    display: inline-block;
+    text-align: right
+}
+
+.left-border {
+    border-left: 1px solid #e0e0e0
+}
+
+.text-input { /* font-family: Courier; */
+    white-space: nowrap
+}
+
+.table-bordered > tfoot > tr.border-display > td {
+    border-bottom: 1px solid #bbbaba;
+    padding-bottom: 2px
+}
+
+.bill-header {
+    border-bottom: 1px solid #e0e0e0;
+    height: 45px;
+}
+
+.bill-header .row {
+    margin: 0 -5px;
+    display: flex;
+    align-items: center;
+}
+
+.bill-header .row > div[class^='col-'] {
+    padding: 0 5px;
+}
+
+.bill-header img {
+    margin: 0 auto;
+    max-height: 42px;
+    width: auto;
+}
+
+.horizontal-line {
+    background-color: #e0e0e0 /*; height:2px*/;
+    margin: 1px 0
+}
+
+.bill-body {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px
+}
+
+.padding-tb-5 {
+    padding: 1px 0 !important;
+}
+
+.signature-line {
+    border-top: 1px solid #e0e0e0;
+    margin: 0;
+    text-align: center;
+    max-width: 130px;
+    margin: 0 auto;
+}
+
+.college_logo {
+    width: 80px;
+}
+
+.bill-header > .row > .col-xs-10.left-border {
+    width: calc(100% - 80px);
+}
+
+.watermark-logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.watermark-logo img {
+    margin: 0 auto;
+    opacity: .3;
+    max-width: 120px !important;
+}
+
+.bill-table .table-bordered > tfoot > tr > td {
+    border: 1px solid #e0e0e0;
+}
+
+.no-border {
+    border: unset !important;
+}
+
+.bill-table .table-bordered {
+    border: 1px solid #e0e0e0 !important;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > td {
+    border-color: #e0e0e0;
+    padding: 0 7px;
+    white-space: normal;
+    line-height: 11px
+}
+
+.table-bordered > thead > tr > th {
+    font-size: 9px;
+    border-bottom-width: 1px;
+    line-height: 16px;
+}
+
+.table-bordered > thead > tr > th:first-child, .table-bordered > tbody > tr > td:first-child {
+    text-align: center;
+    width: 7%
+}
+
+.table-bordered > tfoot > tr > td {
+    padding: 0 7px;
+    border: none
+}
+
+.table-bordered > tfoot > tr > td:first-child {
+    padding-left: 3px;
+}
+
+.table-bordered > tfoot > tr > td:nth-last-child(2) {
+    text-align: right
+}
+
+td {
+    max-width: 170px;
+    word-break: break-all;
+}
+
+.remark_text {
+    padding: 0 3px;
+    margin-top: 2px;
+    display: block;
+    height: 55px
+}
+
+.bill-table {
+    margin-top: 25px
+}
+
+.table-bordered .hide_border {
+    border: unset !important;
+}
+
+.table-bordered .bg-grey {
+    background: #eee
+}
+
+.received_by {
+    border-top: 1px solid #000
+}
+
+.watermark {
+    line-height: 18px;
+    opacity: .07;
+    text-align: justify;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 5
+}
+
+.footer_info {
+    padding: 5px 10px;
+    text-align: center;
+    border: 1px dashed #d73925;
+    color: #d73925;
+    background: #f2dede
+}
+
+.signature {
+    position: relative;
+    height: 20px;
+}
+
+.signature img {
+    position: absolute;
+    left: calc(50% - 40px)
+}
+
+/* extra css */
+.border-right {
+    border-right: 1px dashed #000
+}
+
+@media print {
+    .no-border {
+        border: unset !important;
+    }
+
+    iframe {
+        clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+    }
+
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+
+    .content {
+        padding: 0 !important
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .bill {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+
+    .table-bordered > thead > tr > th, .table-bordered > tbody > tr > td {
+        border-color: #e0e0e0 !important;
+        background: transparent !important
+    }
+
+    .table-bordered > tfoot > tr > td {
+        border-color: transparent !important;
+        background: transparent !important
+    }
+
+    .horizontal-line {
+        background-color: #e0e0e0 !important;
+    }
+
+    .table-bordered > thead > tr > th {
+        background: #e0e0e0 !important
+    }
+
+    .table-bordered > tfoot .text-danger .text-input {
+        color: #a94442 !important
+    }
+
+    .watermark {
+        opacity: .07 !important
+    }
+
+    .footer_info {
+        color: #d73925 !important;
+        background: #f2dede !important
+    }
+
+    .print_button {
+        display: none
+    }
+
+    footer {
+        display: none;
+    }
+
+    .bill-table .table-bordered > tfoot > tr > td {
+        border: 1px solid #e0e0e0 !important;
+    }
+
+    .no-border {
+        border: unset !important;
+    }
+
+    /* @page {margin: 0; size:landscape;} */
+    @page {
+        margin: 0;
+    }
+}
+
+.mb-5 {
+    margin-bottom: 5px !important;
+}
+
+
+/* added by kapil */
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td, .fee-type::before, .fee-type::after {
+    background: #e0e0e0 !important;
+}
+
+/* .bill-header img {max-height : 50px !important;}
+.bill-content {padding : 5px;}
+.bill-header {padding-bottom : 5px !important;}
+.bill h1 {font-size : 16px; margin : 0;}
+.bill-content {font-size : 10px;}
+.bill-content p {margin  : 0 !important;}
+.table-bordered>thead>tr>th, .table-bordered>thead>tr>td, .fee-type::before, .fee-type::after {background : #e0e0e0 !important;} */

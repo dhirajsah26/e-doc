@@ -1,0 +1,324 @@
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-5 {
+    margin-bottom: 5px !important;
+}
+
+.border-top {
+    border-top: 1px solid #bbbaba;
+    padding: 5px 0;
+    margin: 0 !important;
+}
+
+th.text-center, td.text-center, strong.text-center {
+    text-align: center !important;
+}
+
+@page {
+    margin: 0;
+    size: portrait;
+}
+
+.print thead th {
+    text-align: left;
+    overflow: hidden;
+}
+
+.print {
+    width: 210mm;
+    height: 296mm;
+    color: #000;
+    position: relative
+}
+
+.print-wrapper {
+    background: #fff;
+    position: relative
+}
+
+.print-body > p.text-right {
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+}
+
+.print-wrapper .row {
+    margin: 0 -5px;
+}
+
+.print-wrapper .row > div[class^='col-'] {
+    padding: 0 5px;
+}
+
+.top-info {
+    line-height: 23px;
+}
+
+.print-content {
+    padding: 10px 22px;
+    position: relative;
+    z-index: 10;
+}
+
+.print-wrapper .print-content:first-child {
+    border-bottom: 1px dashed #000;
+}
+
+.print h1 {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 0 3px;
+}
+
+.left-border {
+    border-left: 1px solid #b3cde0
+}
+
+.text-input {
+    white-space: nowrap
+}
+
+.print-header, .print-body {
+    position: relative;
+    z-index: 10
+}
+
+.print-header {
+    border-bottom: 1px solid #b3cde0;
+    height: 75px;
+}
+
+.print-header .row {
+    margin: 0 -5px;
+    display: flex;
+    align-items: center;
+}
+
+.print-header .row > div[class^='col-'] {
+    padding: 0 5px;
+}
+
+.top-info strong {
+    width: 117px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 3px
+}
+
+.college_logo {
+    width: 70px;
+    margin: 0 auto;
+}
+
+.horizontal-line {
+    background-color: #b3cde0;
+    margin: 1px 0
+}
+
+.print-body {
+    border-top: 1px solid #b3cde0;
+    padding-top: 0;
+    margin: 0 !important;
+}
+
+.padding-tb-5 {
+    padding: 1px 0 !important;
+}
+
+.signature-line {
+    border-top: 1px solid #b3cde0;
+    margin: 0;
+    text-align: center;
+    max-width: 130px;
+    margin: 0 auto;
+}
+
+.print-header > .row > .col-xs-10.left-border {
+    width: calc(100% - 80px);
+}
+
+.watermark-logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.watermark-logo img {
+    margin: 0 auto;
+    opacity: .3;
+    max-width: 150px !important;
+}
+
+.print-table {
+    margin: 0;
+}
+
+.no-border {
+    border: unset !important;
+}
+
+.print-table .table-bordered {
+    border: 1px solid #000 !important;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > th {
+    border-color: #000;
+    padding: 3px 7px;
+    white-space: normal;
+    background: #b3cde0
+}
+
+.table-bordered > tbody > tr > td {
+    background: none
+}
+
+.table-bordered > thead > tr > th {
+    border-bottom-width: 1px;
+    line-height: 20px;
+}
+
+td {
+    max-width: 170px;
+    word-break: break-all;
+}
+
+.remark_text {
+    padding: 0 3px;
+    margin-top: 2px;
+    display: block;
+    height: 55px
+}
+
+.table-bordered .hide_border {
+    border: unset !important;
+}
+
+.table-bordered .bg-grey {
+    background: #eee
+}
+
+.received_by {
+    border-top: 1px solid #000
+}
+
+.watermark {
+    font-size: 12px;
+    line-height: 18px;
+    opacity: .07;
+    text-align: justify;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1
+}
+
+.footer_info {
+    padding: 5px 10px;
+    text-align: center;
+    border: 1px dashed #d73925;
+    color: #d73925;
+    background: #f2dede
+}
+
+.signature {
+    position: relative;
+    height: 40px;
+}
+
+.signature img {
+    position: absolute;
+    bottom: -18px;
+    left: calc(50% - 35px)
+}
+
+/* extra css */
+.border-right {
+    border-right: 1px dashed #000
+}
+
+
+/** For screen preview **/
+@media screen {
+    .print {
+        max-width: 100%;
+    }
+}
+
+@media print {
+    .no-border {
+        border: unset !important;
+    }
+
+    iframe {
+        clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+    }
+
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+
+    .content {
+        padding: 0 !important
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .print {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+        width: 210mm;
+    }
+
+    .table-bordered, .table-bordered > thead > tr > th, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > th {
+        border-color: #000 !important;
+    }
+
+    .table-bordered > thead > tr > th, .table-bordered > tfoot > tr > th {
+        background: #b3cde0 !important
+    }
+
+    .table-bordered > tbody > tr > td {
+        background: none !important
+    }
+
+    .horizontal-line {
+        background-color: #b3cde0 !important;
+    }
+
+    .watermark {
+        opacity: .07 !important
+    }
+
+    .footer_info {
+        color: #d73925 !important;
+        background: #f2dede !important
+    }
+
+    .print_button {
+        display: none
+    }
+
+    footer {
+        display: none;
+    }
+
+    .no-border {
+        border: unset !important;
+    }
+}

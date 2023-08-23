@@ -1,0 +1,650 @@
+.marksheet-outer-wrapper {
+    width: 21cm;
+    /* margin-bottom:30px; */
+    margin-bottom: 15px;
+}
+
+.marksheet-outer-wrapper:last-child {
+    margin-bottom: 0px !important;
+}
+
+.marksheet-wrapper {
+    padding: 30px;
+    background: #fff;
+}
+
+.print_button {
+    margin-bottom: 15px;
+}
+
+.no-mb {
+    margin-bottom: 0px !important;
+}
+
+.marksheet {
+    border: 3px solid #03539e;
+    padding: 2px;
+    line-height: 18px;
+    color: #03539e;
+    font-size: 12px;
+}
+
+.marksheet-inner {
+    border: 1px solid #03539e;
+    padding: 2px
+}
+
+.marksheet-body {
+    border: 1px solid #03539e;
+    position: relative;
+}
+
+.text-input {
+    text-transform: uppercase;
+    color: #444
+}
+
+.marksheet-content {
+    margin: 0 -1px;
+    position: relative;
+    z-index: 1;
+}
+
+.school_info {
+    position: relative;
+    padding: 12px;
+}
+
+.school_info_heading {
+    height: 70px;
+    max-width: 545px;
+    margin: 0 auto;
+}
+
+.school_info h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 7px auto;
+    width: 100%;
+    line-height: 22px;
+}
+
+.college_address {
+    width: 100%;
+}
+
+.mark_sheet_label {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px
+}
+
+.college_logo {
+    position: absolute;
+    top: 12px;
+    left: 12px
+}
+
+.exam_info {
+    width: 70%;
+    margin: 0 auto
+}
+
+.student_info {
+    padding: 12px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.flex {
+    display: flex
+}
+
+.flex_auto {
+    flex: auto;
+    border-bottom: 1px dotted #03539e;
+    margin-left: 5px;
+    line-height: normal;
+    padding-left: 5px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.table-bordered > thead > tr > th {
+    border-bottom-width: 1px;
+}
+
+.table {
+    margin-bottom: 10px;
+}
+
+.table-bordered tbody td:nth-child(2) {
+    text-align: left
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border-color: #03539e;
+    background: transparent;
+    padding: 3px 7px;
+    font-size: 11px;
+    vertical-align: middle;
+}
+
+.table-bordered {
+    border-color: #03539e
+}
+
+th.rotate {
+    padding: 0 !important;
+    width: 60px
+}
+
+th.rotate > div {
+    transform: rotate(270deg);
+}
+
+.marks_table .total_display {
+    text-align: left
+}
+
+.marks_table h3 {
+    font-size: 22px !important;
+    margin: 5px !important;
+}
+
+.total_display {
+    vertical-align: middle !important
+}
+
+.total_display strong {
+    padding: 3px 7px;
+    border: 1px solid #03539e;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.footer_info {
+    padding: 0 12px 12px;
+}
+
+.footer_info hr {
+    margin: 5px 0 !important;
+    border-top: none !important;
+}
+
+.footer_info > .row:first-of-type {
+    text-align: center
+}
+
+.watermark {
+    font-size: 8px;
+    line-height: 12px;
+    opacity: .07;
+    text-align: justify;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.signature_rep {
+    display: block;
+    text-align: center;
+}
+
+.signature {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 50px)
+}
+
+.signature-block {
+    padding-top: 60px;
+}
+
+.download-info {
+    margin-left: 12px;
+}
+
+/** start of design 2 **/
+.design2 .marksheet {
+    font-family: 'PT Sans', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.design2 .municipality_logo {
+    top: 57px;
+    left: 50px;
+    position: absolute;
+}
+
+.design2 .school_info_heading {
+}
+
+.design2 .school_info_heading {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 23px;
+    max-width: 460px;
+    margin: 0 auto;
+    height: 75px;
+}
+
+.text-normal {
+    font-weight: normal;
+}
+
+.vertical {
+    position: relative;
+    height: 70px;
+    max-height: 70px;
+    width: 50px;
+}
+
+.vertical span {
+    position: absolute;
+    transform-origin: center;
+    transform: rotate(-90deg);
+    top: 15px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    left: -5px;
+    width: 60px;
+}
+
+.info_top {
+    line-height: 13px;
+    margin: 10px 0 15px;
+}
+
+.info_bottom {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.design2 .mark_sheet_label {
+    margin: 25px 0 10px
+}
+
+.design2 .marks_table th {
+    font-size: 12px;
+}
+
+.design2 table {
+    margin-bottom: 8px;
+}
+
+.total {
+    border-bottom: 1px solid #03539e;
+    padding-bottom: 8px;
+}
+
+.total .col-md-6 {
+    margin-left: 50% !important
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.design2 .school_info, .design2 .student_info {
+    padding: 15px;
+}
+
+.design2 .student_info {
+    margin-bottom: 20px;
+}
+
+.design2 .table-bordered > tbody > tr > td {
+    border-top: none;
+    border-bottom: none;
+}
+
+.design2 .table-bordered > thead > tr > th, .design2 .table-bordered > tbody > tr > td {
+    padding: 3px 15px
+}
+
+.design2 .table-bordered > tbody > tr > td {
+    font-size: 12px;
+}
+
+.design2 table {
+    height: 388px !important;
+}
+
+.design2 .footer_info {
+    padding: 10px 20px 20px
+}
+
+.footer_info ol {
+    padding-left: 12px;
+}
+
+.design2 .signature-block {
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+.design2 .signature {
+    position: relative;
+    height: auto;
+    left: 0;
+    bottom: 0
+}
+
+.design2 .school_info_heading .flex_auto {
+    border-bottom-width: 2px;
+    height: 25px;
+    margin-left: 0;
+}
+
+.design2 .signature {
+    width: 157px;
+    margin: 0 auto;
+}
+
+.design2 .signature img {
+    position: absolute;
+    bottom: 9px;
+}
+
+.text-darkred {
+    color: #cf0410
+}
+
+.bottom-row-space {
+    height: 50px;
+}
+
+/** end of design 2 **/
+
+/*start of css for marksheetTwoInOne*/
+.marksheetTwoInOne .marksheet {
+    font-size: 10px;
+}
+
+.marksheetTwoInOne .marksheet-wrapper {
+    padding: 10px;
+}
+
+.marksheetTwoInOne .school_info_heading {
+    max-width: 360px;
+}
+
+.marksheetTwoInOne .school_info h1 {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.marksheetTwoInOne .college_logo img {
+    max-height: unset;
+}
+
+.marksheetTwoInOne .student_info {
+    line-height: 19px;
+}
+
+.marksheetTwoInOne .table-bordered > thead > tr > th {
+    padding: 1px 5px;
+    font-size: 10px;
+}
+
+.marksheetTwoInOne .table-bordered > tbody > tr > td, .marksheetTwoInOne .total_display strong {
+    padding: 2px 3px;
+    font-size: 10px;
+}
+
+.marksheetTwoInOne table, .marksheetTwoInOne p {
+    margin-bottom: 5px;
+}
+
+.marksheetTwoInOne .signature-block {
+    margin-top: 5px;
+}
+
+.no-gutter {
+    margin: 0;
+}
+
+.no-gutter > div[class^='col-'] {
+    padding: 0
+}
+
+.marksheetTwoInOne .marks_table > table:first-child {
+    height: 285px;
+}
+
+/*end of css for marksheetTwoInOne*/
+
+/*ledger css*/
+.ledger {
+    overflow: auto;
+    padding: 0.42in;
+    font-size: 12px;
+}
+
+.ledger-inner {
+    width: 16.54in;
+}
+
+.ledger .ledger-header {
+    margin-bottom: 45px;
+}
+
+.ledger-table {
+    border-collapse: separate;
+}
+
+.ledger-table .info-td {
+    padding-left: 0 !important;
+    padding-right: 0 !important
+}
+
+.ledger-table td {
+    border-color: transparent !important;
+    background: transparent !important;
+    padding: 5px 7px !important;
+    vertical-align: middle !important;
+}
+
+.ledger-table thead tr:nth-child(2) td, .ledger-table tbody tr:first-child td {
+    border-top: 1px dashed #000 !important;
+}
+
+.ledger-table .dbl {
+    border-left: 1px dashed #000 !important;
+    padding-left: 5px
+}
+
+.ledger-table .dbr {
+    border-right: 1px dashed #000 !important;
+    padding-right: 5px
+}
+
+.ledger-table .sbl {
+    position: relative;
+    padding-left: 5px
+}
+
+.ledger-table .sbl:before {
+    content: '';
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    border-left: 1px solid #000 !important;
+}
+
+.break-after {
+    border-bottom: 8px solid #ecf0f5;
+    clear: both;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    iframe {
+        clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+    }
+
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+
+    .content {
+        padding: 0 !important
+    }
+
+    .marksheet-outer-wrapper {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+
+    .marksheet * {
+        color: #03539e !important
+    }
+
+    .text-input, .text-input * {
+        color: #444 !important;
+    }
+
+    .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th,
+    .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td,
+    .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+        border-color: #03539e !important;
+        background: transparent !important
+    }
+
+    .table-bordered {
+        border-color: #03539e !important
+    }
+
+    .watermark {
+        opacity: .0 .07 !important
+    }
+
+    .print_button {
+        display: none
+    }
+
+    footer {
+        display: none;
+    }
+
+    #overlay {
+        display: none;
+    }
+
+
+    /** start of design 2 **/
+    .design2 .table-bordered > tbody > tr > td {
+        border-top: none !important;
+        border-bottom: none !important;
+    }
+
+    .text-darkred {
+        color: #cf0410 !important
+    }
+
+    .break-after {
+        page-break-after: always;
+        border-bottom: none;
+    }
+
+    /*print css for ledger*/
+    .ledger {
+        overflow: initial;
+        padding: 0
+    }
+
+    .ledger-inner {
+        width: 100%;
+    }
+}
+
+/** added by kapil **/
+.student_info.bordered {
+    border: 1px solid #03539e;
+    margin: 10px 5px !important;
+    padding: 0 5px !important;
+}
+
+.student_info label {
+    margin-bottom: 0px;
+}
+
+.marksheet.theme-second .school_info {
+    padding: 5px !important;
+}
+
+.marksheet.theme-second .mark_sheet_label {
+    margin: 0;
+}
+
+.marksheet.theme-second .school_info h1 {
+    margin: 0px !important;
+}
+
+.marksheet.theme-second .school_info_heading {
+    height: unset !important;
+    max-width: unset;
+}
+
+.marksheet.theme-second .college_logo {
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    left: 10px;
+}
+
+.marksheet.theme-second .signature_rep {
+    border-top: 1px solid #03539e;
+}
+
+.marksheet.theme-second .college_address {
+    font-weight: 600;
+}
+
+.issuedDateRef {
+    position: relative;
+}
+
+.issuedDate {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 18px;
+    text-align: center;
+}
+
+/* .marksheet.theme-second .marks_table table thead {background : #2874F0; color : #FFF;} */
+.fs-16 {
+    font-size: 16px;
+}

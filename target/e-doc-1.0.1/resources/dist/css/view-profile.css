@@ -1,0 +1,354 @@
+.printBox {
+    max-width: 21cm;
+    margin-bottom: 30px;
+    background: #fff;
+}
+
+.with-heading-bg {
+    border-color: #2874F0
+}
+
+.with-heading-bg > thead > tr > th {
+    background: #2874F0 !important;
+    color: #fff;
+    border-color: #2258b1 !important;
+    border-bottom-width: 1px !important;
+}
+
+table .text-left {
+    text-align: left !important;
+}
+
+hr.nomargin {
+    margin: 0;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 1.2rem;
+}
+
+.mb-3 {
+    margin-bottom: 1.6rem;
+}
+
+.mb-4 {
+    margin-bottom: 2rem;
+}
+
+.mb-5 {
+    margin-bottom: 3rem;
+}
+
+.mr-1 {
+    margin-right: 0.8rem;
+}
+
+.input-text {
+    border: 1px solid transparent;
+    border-bottom-color: #999;
+    min-height: 34px;
+    padding: 8px 0;
+}
+
+.info-panel h4 {
+    font-weight: 600 !important;
+}
+
+.text-white {
+    color: #fff !important
+}
+
+.printBox {
+    padding: 15mm;
+}
+
+.info-wrapper {
+    margin-bottom: 40px;
+}
+
+.printBox-header > div {
+    background: #2874F0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 5px 20px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.info-panel.with-border {
+    border: 1px solid #999;
+    position: relative;
+    padding: 25px;
+}
+
+.info-header {
+    font-weight: bold;
+    font-size: 17px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.info-header.with-border { /* width: 300px; margin-left: auto; margin-right: auto; */
+    padding-bottom: 5px;
+}
+
+.info-header.with-border:after {
+    content: '';
+    height: 3px;
+    width: 40px;
+    background-color: #007fff;
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 20px);
+}
+
+.info-panel.with-border .info-header {
+    position: absolute;
+    top: -19px;
+    left: 13px;
+    padding: 5px 12px;
+    background: #fff;
+}
+
+.basic-info .info-panel {
+    border-width: 3px;
+}
+
+.basic-info .info-content .row {
+    margin-bottom: 4px;
+}
+
+.basic-info .info-content .col-xs-8 {
+    padding-left: 0
+}
+
+.basic-info li span {
+    display: inline-block;
+    width: 175px;
+    font-weight: 600
+}
+
+.profile-img-box {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    text-align: center;
+    z-index: 50
+}
+
+.profile-img {
+    border: 2px solid #999;
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 130px;
+    width: 130px;
+}
+
+.info-label {
+    border-bottom: 2px solid #a2cbd6;
+    display: inline-block;
+    background: #c7eef9;
+    padding: 3px 12px;
+    margin-bottom: 8px;
+}
+
+.parent-info-row .col-xs-4 {
+    display: flex;
+    margin-bottom: 8px
+}
+
+.parent-info-row span {
+    font-weight: 600;
+    display: inline-block;
+    width: 76px;
+    margin-right: 5px
+}
+
+.parent-item + .parent-item {
+    border-top: 1px dashed #000;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+.report-item {
+    margin-top: 25px;
+}
+
+.report-item > div {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.report-item > .item-title {
+    position: relative;
+    background: #0000009e
+}
+
+.report-item > .item-value {
+    font-weight: bold;
+}
+
+.present-count {
+    border: 1px solid #f15c80;
+    display: inline-block;
+    padding: 2px 5px;
+}
+
+.logowatermark {
+    position: fixed;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    opacity: 0.1;
+    z-index: 1000 !important;
+    display: none;
+}
+
+.progress-bar-purple {
+    background: #555299
+}
+
+
+@page {
+    size: A4;
+    margin: 15mm;
+}
+
+@media print {
+    /*common css*/
+    * {
+        color-adjust: exact !important;
+        printer-colors: exact !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    iframe {
+        clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+    }
+
+    .content {
+        padding: 0 !important
+    }
+
+    .watermark {
+        opacity: .0 .05 !important
+    }
+
+    .print_button, footer {
+        display: none
+    }
+
+    /*new css*/
+    .info-wrapper {
+        page-break-inside: avoid !important;
+    }
+
+    .printBox {
+        padding: 0;
+    }
+
+    .printBox-header > div, .with-heading-bg th, .info-header.with-border:after {
+        background: #2874F0 !important;
+    }
+
+    .info-header {
+        background: #fff !important;
+    }
+
+    .info-label {
+        border-bottom: 2px solid #a2cbd6 !important;
+        background: #c7eef9 !important;
+    }
+
+    .table-striped > tbody > tr:nth-of-type(odd) {
+        background-color: #f9f9f9 !important;
+    }
+
+    .table td {
+        background: none !important
+    }
+
+    .report-item > .item-title {
+        background: #0000009e !important;
+        color: #fff !important
+    }
+
+    .logowatermark {
+        display: block;
+    }
+
+    .present-count > strong {
+        color: #000 !important;
+    }
+
+
+    .progress {
+        background-color: #f5f5f5 !important;
+    }
+
+    .progress-bar-aqua, .progress-bar-info {
+        background-color: #00c0ef !important;
+    }
+
+    .progress-bar-purple {
+        background: #555299 !important
+    }
+
+    .progress-bar-yellow, .progress-bar-warning {
+        background-color: #f39c12 !important;
+    }
+
+    .progress-bar-red, .progress-bar-danger {
+        background-color: #dd4b39 !important;
+    }
+
+    .progress-bar-green, .progress-bar-success {
+        background-color: #00a65a !important;
+    }
+}
+
+
+<!--
+add these css at the end of info.css
+
+-->
+.info-header.with-border {
+    width: 100%
+}
+
+/*or remove css of fixed width*/
+.box-right {
+    width: 260px;
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    z-index: 25
+}
+
+.row.no-gutter {
+    margin: 0 !important;
+}
+
+.row.no-gutter > div[class^='col-'] {
+    padding: 0 !important;
+}
+
+.box-right .box-inner {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-left: 4px;
+}
+
+.rating-value {
+    font-size: 20px;
+    font-weight: 600;
+    color: #001a35
+}

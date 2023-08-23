@@ -1,0 +1,203 @@
+.print {
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    background: #fff;
+    position: relative;
+    width: 148mm;
+    height: 209mm;
+    overflow: hidden;
+}
+
+.print-content {
+    position: relative;
+    z-index: 10;
+    padding: 40px;
+}
+
+.college_logo {
+    width: 130px;
+    margin-top: -35px;
+}
+
+.title {
+    font-size: 26px;
+    color: #0f3065;
+    margin: 50px 0 50px
+}
+
+.address {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.student-info {
+    padding-bottom: 5px;
+    line-height: 24px
+}
+
+.table-bordered {
+    border-left: none;
+    border-right: none;
+    border-color: #000;
+    border-top-width: 2px
+}
+
+.text-normal {
+    font-weight: normal;
+}
+
+.table {
+    border-bottom: none;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    padding: 2px 7px
+}
+
+.info-total span {
+    padding: 5px 0 5px 5px
+}
+
+.table-bordered > tfoot > tr > td {
+    border: none
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > td {
+    vertical-align: middle;
+}
+
+.table-bordered > thead > tr > th {
+    color: #000;
+    border-bottom-width: 2px;
+}
+
+.cell-border-left {
+    padding: 5px 0 5px 5px;
+    border-left: 1px solid #000;
+    display: block;
+}
+
+.info-total {
+    font-weight: bold;
+}
+
+.exam-authority {
+    padding: 40px 0
+}
+
+.exam-authority span {
+    border-top: 1px solid #000;
+    padding: 0 5px
+}
+
+.watermark-logo {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    opacity: 0.3
+}
+
+.watermark {
+    color: #c00;
+    font-size: 12px;
+    line-height: 18px;
+    opacity: .07;
+    text-align: justify;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    overflow: hidden
+}
+
+.signature {
+    position: relative;
+    height: auto;
+    width: 70px;
+}
+
+.signature img {
+    position: absolute;
+    bottom: -18px;
+    left: calc(50% - 35px)
+}
+
+
+@page {
+    size: A5;
+    margin: 0;
+}
+
+/** For screen preview **/
+@media screen {
+    .print {
+        border-bottom: 8px solid #ecf0f5;
+    }
+}
+
+/*setup for print*/
+@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+
+    iframe {
+        clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+    }
+
+    .content {
+        padding: 0 !important
+    }
+
+    .print {
+        width: 148mm;
+        page-break-after: always;
+        background: transparent !important;
+    }
+
+    .title {
+        color: #0f3065 !important
+    }
+
+    .table-bordered {
+        border-color: #03396c !important
+    }
+
+    .table {
+        border-bottom: none !important;
+    }
+
+    .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+        border-color: #03396c !important;
+        background: transparent !important;
+        border-left: none !important;
+        border-right: none !important;
+    }
+
+    .table-bordered > tfoot > tr > td {
+        border: none !important;
+    }
+
+    .watermark {
+        color: #c00 !important;
+        opacity: .07 !important;
+    }
+
+    .print_button {
+        display: none
+    }
+
+    footer {
+        display: none;
+    }
+
+    #overlay {
+        display: none;
+    }
+}

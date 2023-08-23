@@ -1,0 +1,93 @@
+.px-0{padding-left: 0; padding-right: 0}
+.mb-15{margin-bottom: 15px;}
+.row.no-gutter{margin:0;}
+.row.no-gutter>div[class^='col-']{padding: 0}
+.row.gutter-sm{margin:0 -8px;}
+.row.gutter-sm>div[class^='col-']{padding: 0 8px}
+.bb-blue{border-bottom-color: #02669a !important}
+.bb-red{border-bottom-color: #eb2429 !important}
+.bg-blue,.bg-red{color: #fff}
+.bg-blue{background: #02669a !important;}
+.bg-red{background: #eb2429 !important;}
+
+body{background: url(images/pattern.png) #e4f5fe}
+.nav-container, .main-footer{background: url(images/pattern.png) #02669a; position: relative;}
+.main-header{max-height: initial;}
+.navbar-brand{padding: 11px 15px;}
+
+.logo-container{padding: 15px 25px 10px; position: relative;}
+.dotm-logo-en{margin: 0 auto;}
+.gov-logo,.flag-of-nepal{position: absolute;top: 15px}
+.gov-logo{left: 25px}
+.flag-of-nepal{right: 25px;}
+.logo-text{color: #fff; line-height: 17px}
+
+.navbar-collapse{background: #02669a; border-bottom: solid 1px #fff;}
+.navbar-nav>li>a{color: #fff; padding-top: 10px; padding-bottom: 10px}
+.navbar-nav .dropdown-menu a{padding-top: 7px; padding-bottom: 7px;}
+.navbar-nav .dropdown-menu{min-width: 250px;}
+.navbar-nav>li:hover>a, .navbar-nav .dropdown-menu a:hover, .navbar-nav a.active, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{background: #327CCB; color: #fff}
+
+.content-wrapper{background: none;}
+
+.slider-outer{background: #dbebef;}
+#main-slider{max-height: 351px; overflow: hidden;}
+.dg{padding: 15px;}
+.dg img{border: 1px solid #63b7cc; margin: 0 auto 8px;}
+
+.scrolling-news{background: #02669a; position: relative; margin-bottom: 20px;}
+.scrolling-news .marquee{width: calc(100% - 261px); overflow: hidden; position: relative; height: 40px; margin-left:155px;}
+.scrolling-news ul{white-space: nowrap; margin:0; overflow: hidden; position: absolute; top: 0; left: 0; padding: 11px 0}
+.scrolling-news a{color: #fff}
+
+.highlight-icon,.email{position: absolute; top: 0}
+.highlight-icon{left: 0}
+.email{right: 0}
+
+.custom-box{background: #fff;}
+.custom-box-header h2{margin: 0 0 20px;}
+.custom-box-header, .custom-box-body{padding: 20px;}
+.custom-box-header{text-align: center; border-bottom-width: 3px; border-bottom-style: solid; position: relative; 
+	background: linear-gradient(0deg, #f5f5f5,#fff)}
+.custom-box-header .fa{font-size: 20px; width: 50px; height: 50px; background: #eee; line-height: 44px; border-radius: 50%; 
+	border: 5px solid #fff; position: absolute; bottom: -25px; left: calc(50% - 25px)}
+.section-content ul{list-style: none;}
+.section-content ul li{position: relative; margin-bottom: 4.5px;}
+.section-content ul li:before {
+    content: '\f101';
+    font-family: 'FontAwesome';
+    padding-right: 10px;
+    position: absolute;
+    left: -20px;
+}
+.item-block{display: block; padding: 10px 10px 10px 62px; position: relative;}
+.item-block .fa{position: absolute; top: calc(50% - 20px); left: 10px; width:40px; height: 40px; line-height: 40px; text-align: center; background: #eee; color: #000; border-radius: 50%; font-size: 20px}
+
+.main-footer,.main-footer a{color: #fff}
+.main-footer ul a:hover{text-decoration: underline;}
+footer ul{padding-left: 20px;}
+.copyright{border-top: 1px solid rgba(255,255,255,.2); padding-top: 15px;}
+
+@media(min-width: 768px){
+	.navbar-brand{position: absolute; right: 43px; top: 120px;}
+	.carousel-indicators {
+	    bottom: 10px;
+	    margin: 0;
+	    width: auto;
+	    right: 20px;
+	    left: auto;
+	}
+	.navbar-nav>li.dropdown:hover>.dropdown-menu{display: block;}
+	.navbar-nav>li>a{margin-right: 1px;}
+}
+
+@media(max-width: 767.99px){
+	.gov-logo img{max-width: 60px;}
+	.flag-of-nepal{max-width: 48px;}
+	.logo-container{padding-top: 100px;}
+	.logo-text{text-align: center; margin-top: 10px}
+	.scrolling-news .marquee{height: 80px; width:calc(100% - 10px); margin-left: 5px}
+	.scrolling-news .marquee ul{top: 40px;}
+	.navbar-nav>li>a{margin-bottom: 1px;}
+	.navbar-nav .open .dropdown-menu{background-color: #fff; border-radius: 0}
+}

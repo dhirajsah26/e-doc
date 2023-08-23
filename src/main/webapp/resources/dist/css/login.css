@@ -1,0 +1,135 @@
+.login-page {
+    background-color: #2874f0;
+    font-size: 16px;
+    display: block;
+}
+
+.login-page h2 {
+    margin: 0 0 25px;
+    font-weight: bold;
+}
+
+#particles-js {
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.login-page h4 {
+    padding: 10px 0;
+    letter-spacing: .7px
+}
+
+.login-box {
+    width: 800px;
+    max-width: 100%;
+    background: #fff;
+    margin: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    position: absolute;
+    top: calc(50% - 244px);
+    left: calc(50% - 400px);
+    z-index: 5
+}
+
+.login-box > .row {
+    margin: 0;
+}
+
+.login-box > .row > div[class^='col-'] {
+    padding: 0
+}
+
+.login-page .form-group {
+    height: 70px
+}
+
+.login-page .form-control {
+    border-radius: 0 !important;
+    padding: 20px 12px;
+    border: none;
+    border-bottom: 2px solid #d2d6de;
+    padding: 20px 0;
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    background: none;
+    font-size: 18px;
+}
+
+.login-left {
+    border-right: 1px solid #ccc
+}
+
+.login-content {
+    padding: 25px
+}
+
+.login-page form {
+    margin-top: 16%
+}
+
+.login-page .f-label {
+    font-size: 14px;
+    margin-top: 5px
+}
+
+.login-page label.active {
+    color: #2874f0;
+    font-weight: normal;
+    font-size: 15px;
+    top: 5px
+}
+
+.login-page label {
+    font-size: 18px;
+    font-weight: normal;
+    color: #999;
+    margin-bottom: -5px;
+    position: absolute;
+    top: 35px;
+    transition: all linear .1s
+}
+
+.btn-login {
+    padding: 16px;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 0 3px 1px rgba(0, 0, 0, .15);
+    letter-spacing: 1px
+}
+
+.edn-logo {
+    margin: 0 auto
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.login-page select.form-control {
+    padding: 0
+}
+
+.login-page .accountType {
+    padding-top: 7px
+}
+
+@media (max-width: 767px) {
+    #particles-js {
+        display: none
+    }
+
+    .login-page {
+        background: #fff;
+    }
+
+    .login-box {
+        margin: 0;
+        box-shadow: none;
+        left: 0
+    }
+
+    .login-left {
+        display: none
+    }
+}

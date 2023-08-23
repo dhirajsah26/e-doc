@@ -1,0 +1,33 @@
+@page {
+    size: A4 portrait;
+}
+
+.marksheet-wrapper {
+    height: 296mm;
+    overflow: hidden;
+}
+
+.ECA-wrapper {
+    padding: 0 7px;
+}
+
+.ECA-wrapper, .info_notice {
+    max-height: 119px;
+    overflow: hidden;
+}
+
+.ECA-table td, .ECA-table th, .info_notice td, .info_notice th {
+    padding: 1px 5px !important
+}
+
+.info_notice * {
+    font-size: 11px !important
+}
+
+.table-subjects {
+    height: 282px;
+}
+
+.summary-table {
+    height: 52px !important;
+}

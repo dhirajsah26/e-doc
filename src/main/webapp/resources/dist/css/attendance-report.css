@@ -1,0 +1,330 @@
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-5 {
+    margin-bottom: 5px !important;
+}
+
+.border-top {
+    border-top: 1px solid #bbbaba;
+    padding: 5px 0;
+    margin: 0 !important;
+}
+
+@page {
+    margin: 6.35mm;
+    size: A4 landscape;
+}
+
+.print {
+    width: 297mm;
+    min-height: 209mm;
+    color: #000;
+    font-size: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.print-wrapper {
+    background: #fff;
+    position: relative
+}
+
+.print-body > p.text-right {
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+}
+
+.print-wrapper .row {
+    margin: 0 -5px;
+}
+
+.print-wrapper .row > div[class^='col-'] {
+    padding: 0 5px;
+}
+
+.print-content {
+    position: relative;
+    z-index: 10;
+}
+
+.print h1 {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.small-info {
+    margin-bottom: 10px;
+}
+
+.small-info-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.left-border {
+    border-left: 1px solid #b3cde0
+}
+
+.text-input {
+    white-space: nowrap
+}
+
+.print-table > table {
+    margin-bottom: 0
+}
+
+.table-bordered > tfoot > tr.border-display > td {
+    border-bottom: 1px solid #bbbaba;
+    padding-bottom: 2px
+}
+
+.print-header, .print-body {
+    position: relative;
+    z-index: 10
+}
+
+.print-header {
+    border-bottom: 1px solid #ccc;
+}
+
+.print-header .row {
+    margin: 0 -5px;
+    display: flex;
+    align-items: center;
+}
+
+.print-header .row > div[class^='col-'] {
+    padding: 0 5px;
+}
+
+.college_logo {
+    width: 70px;
+    margin: 0 auto;
+}
+
+.horizontal-line {
+    margin: 2px 0
+}
+
+.print-body {
+    border-top: 1px solid #ccc;
+    padding-top: 0;
+    margin: 0 !important;
+}
+
+.padding-tb-5 {
+    padding: 5px 0 !important;
+}
+
+.signature-line {
+    border-top: 1px solid #ccc;
+    margin: 0;
+    text-align: center;
+    max-width: 130px;
+    margin: 0 auto;
+}
+
+.watermark-logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.watermark-logo img {
+    margin: 0 auto;
+    opacity: .3;
+    max-width: 150px !important;
+}
+
+.print-table .table-bordered > tfoot > tr > td {
+    border: 1px solid #b3cde0;
+}
+
+.no-border {
+    border: unset !important;
+}
+
+.print-table .table-bordered, .table-bordered > thead > tr > th, .table-bordered > tbody > tr > td {
+    border-color: #ccc
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > td {
+    padding: 1px;
+    white-space: normal;
+    vertical-align: middle;
+}
+
+.table-bordered > thead > tr > th {
+    background: #2874f0 !important;
+    color: #fff;
+}
+
+.table-bordered > thead > tr > th {
+    font-size: 9px;
+    border-bottom-width: 1px;
+}
+
+.table-bordered .hide_border {
+    border: unset !important;
+}
+
+.received_by {
+    border-top: 1px solid #ccc
+}
+
+.watermark {
+    font-size: 12px;
+    line-height: 18px;
+    opacity: .07;
+    text-align: justify;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1
+}
+
+.footer_info {
+    padding: 5px 10px;
+    text-align: center;
+    border: 1px dashed #d73925;
+    color: #d73925;
+    background: #f2dede
+}
+
+.signature {
+    position: relative;
+}
+
+.signature img {
+    position: absolute;
+    bottom: -18px;
+    left: calc(50% - 35px)
+}
+
+.in-time, .out-time, .present, .absent {
+    color: #fff;
+}
+
+.in-time, .present {
+    background: green
+}
+
+.out-time {
+    background: orange
+}
+
+.absent {
+    background: red
+}
+
+.print-title {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* extra css */
+.border-right {
+    border-right: 1px dashed #000
+}
+
+
+/** For screen preview **/
+@media screen {
+    .print {
+        max-width: 100%;
+    }
+
+    .print-content {
+        padding: 6.35mm;
+    }
+}
+
+@media print {
+    .no-border {
+        border: unset !important;
+    }
+
+    iframe {
+        clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+    }
+
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+
+    .content {
+        padding: 0 !important
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .print {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+        max-width: 297mm;
+    }
+
+    .table-bordered > thead > tr > th, .table-bordered > tbody > tr > td {
+        border-color: #ccc !important;
+        background: transparent !important
+    }
+
+    .table-bordered > thead > tr > th {
+        background: #2874f0 !important;
+        color: #fff !important
+    }
+
+    .table-bordered > tbody > tr > td.in-time, .table-bordered > tbody > tr > td.present {
+        background: green !important
+    }
+
+    .table-bordered > tbody > tr > td.absent {
+        background: red !important
+    }
+
+    .table-bordered > tbody > tr > td.out-time {
+        background: orange !important
+    }
+
+    .watermark {
+        opacity: .07 !important
+    }
+
+    .footer_info {
+        color: #d73925 !important;
+        background: #f2dede !important
+    }
+
+    .print_button {
+        display: none
+    }
+
+    footer {
+        display: none;
+    }
+
+    .no-border {
+        border: unset !important;
+    }
+}

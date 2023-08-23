@@ -1,0 +1,268 @@
+.row-collapsed {
+    margin: 0;
+}
+
+.row-collapsed > div[class^='col-'] {
+    padding: 0
+}
+
+.row-medium {
+    margin: 0 -2px;
+}
+
+.row-medium > div[class^='col-'] {
+    padding: 0 2px;
+}
+
+.evaluation-outer-wrapper {
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.evaluation {
+    font-size: 13px;
+    line-height: 18px;
+    color: #000;
+    background: #fff;
+    position: relative;
+    page-break-after: always;
+    border-bottom: 8px solid #ecf0f5;
+}
+
+.evaluation-content {
+    position: relative;
+    z-index: 10;
+    padding: 25px;
+}
+
+.evaluation-header {
+    height: 45px;
+    overflow: hidden;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 3px
+}
+
+.exam-name {
+    font-weight: 600
+}
+
+.student-info {
+    padding-bottom: 5px;
+}
+
+.student-info div[class^='col-'] {
+    margin-bottom: 8px;
+}
+
+.student-info strong {
+    margin-right: 10px;
+}
+
+.student-info-item {
+    padding-bottom: 5px
+}
+
+.border-outer {
+    border: 1px solid #f00;
+    padding: 5px;
+}
+
+.evaluation-table {
+    height: 460px;
+}
+
+.evaluation-table table {
+    margin-bottom: 0
+}
+
+.teacherRemark {
+    margin-top: 30px;
+}
+
+.remark-title-box {
+    background: #000;
+    color: #fff;
+    padding: 2px;
+    display: inline-block
+}
+
+.remark-text {
+    height: 36px;
+}
+
+.exam-authority {
+    padding-top: 35px;
+    margin-bottom: 5px;
+    height: 67px;
+}
+
+.exam-authority span {
+    border-top: 1px solid #000;
+    padding: 0 3px;
+    font-weight: bold;
+    width: 85px;
+}
+
+.authority-sign {
+    position: relative;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.authority-sign img {
+    position: absolute;
+    bottom: 50%;
+    margin: 0 auto;
+    left: calc(50% - 29px)
+}
+
+.table {
+    margin-bottom: 5px
+}
+
+.table-bordered, .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+    border-color: #000;
+    background: none
+}
+
+.table-bordered > tbody > tr > th, .table-bordered > tbody > tr > td {
+    padding: 0px 5px;
+    border-bottom-width: 1px
+}
+
+.table-bordered > tbody > tr > td {
+    font-size: 12px;
+}
+
+.table-bordered > tbody > tr > th, .table-bordered > tbody > tr > td {
+    vertical-align: middle;
+}
+
+.table .text-left {
+    text-align: left !important;
+}
+
+.totalGrade {
+    font-weight: bold;
+}
+
+.totalGrade td:first-child {
+    border-right: none !important;
+}
+
+.totalGrade td:last-child {
+    border-left: none !important;
+}
+
+.table-examination-report {
+    margin-bottom: 5px !important;
+}
+
+.hidden-space {
+    height: 58px;
+}
+
+.watermark-logo {
+    position: absolute;
+    top: calc(50% - 150px);
+    text-align: center;
+    width: 100%;
+    opacity: 0.2;
+    z-index: 0
+}
+
+.collegeLogoWatermark {
+    width: auto;
+}
+
+.watermark {
+    color: #c00
+    line-height: 18px;
+    opacity: .07;
+    text-align: justify;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    overflow: hidden
+}
+
+.flex {
+    display: flex;
+}
+
+.flexAuto {
+    flex: auto;
+    border-bottom: 1px dotted #000;
+    margin-left: 5px;
+    line-height: normal;
+}
+
+/*setup for print*/
+@page {
+    size: landscape;
+    margin: 0;
+}
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+
+    iframe {
+        clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+    }
+
+    .content {
+        padding: 0 !important
+    }
+
+    .evaluation-outer-wrapper {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+    }
+
+    .evaluation {
+        border-bottom: none;
+    }
+
+    .table-bordered, .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td,
+    .table-bordered > tfoot > tr > td {
+        border-color: #000 !important;
+        background: none !important
+    }
+
+    .remark-title-box {
+        background: #000 !important;
+        color: #fff !important;
+    }
+
+    .watermark {
+        color: #c00 !important;
+        opacity: .07 !important;
+    }
+
+    .print_button {
+        display: none
+    }
+
+    footer {
+        display: none;
+    }
+
+    #overlay {
+        display: none;
+    }
+}
